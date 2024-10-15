@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+
+    <style>
+        button {
+            padding: 10px;
+            border: none;
+            background-color: #15803D;
+            color: white;
+            font-size: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to the Home page</h1>
+    <button onclick="logout()">Logout</button>
+</body>
+<script>
+    function logout() {
+        localStorage.clear()
+        alert("you have been logged out")
+        window.location.href = "login.html"
+    }
+</script>
+
+</html>
